@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="main.css">
+        
+        <title>Neon Buttons</title>
+    </head>
+    <body>
+
+        <div class="style-inputs-result">
+            <div>
+                <span class="button">Read More</span>
+            </div>
+        </div>
+
+        <div class="style-generate-container">
+            <div class="style-input primary-settings">
+                <label for="#primary-color">Neon color</label>
+                <input type="color" id="primary-color" value="#00FFFF" onchange="setPrimaryColor()">
+                <label for="#btn-width">Width</label>
+                <input type="number" min="0" step="10" id="btn-width" value="150" onchange="setBtnWidth()">px
+                <label for="#btn-height">Height</label>
+                <input type="number" min="0" step="10" id="btn-height" value="50" onchange="setBtnHeight()">px
+            </div>
+            <div class="style-input button-neon-style">
+                <p>Neon Style</p>
+                <input type="radio" id="default" name="neon-style" checked onchange="setNeonStyle()">
+                <label for="default">Default</label><br>
+                <input type="radio" id="middle" name="neon-style" onchange="setNeonStyle()">
+                <label for="middle">From Middle to Sides</label><br>
+                <input type="radio" id="middle-grow" name="neon-style" onchange="setNeonStyle()">
+                <label for="middle-grow">Middle Grow</label><br>
+                <input type="radio" id="top-bottom" name="neon-style" onchange="setNeonStyle()">
+                <label for="top-bottom">Top - Bottom</label><br>
+                <input type="radio" id="bottom-top" name="neon-style" onchange="setNeonStyle()">
+                <label for="bottom-top">Bottom - Top</label><br>
+                <input type="radio" id="left-right" name="neon-style" onchange="setNeonStyle()">
+                <label for="left-right">Left - Right</label><br>
+                <input type="radio" id="right-left" name="neon-style" onchange="setNeonStyle()">
+                <label for="right-left">Right - Left</label><br>
+            </div>
+            <div class="style-input button-background-style">
+                <label for="#btn-background-color">Button background color</label>
+                <input type="color" id="btn-background-color" value="#000000" onchange="setBtnBackgroundColor()">
+                <label for="#btn-background-transparency">Background transparency</label>
+                <input type="number" min="0" max="1" step="0.1" id="btn-background-transparency" value="0" onchange="setBtnBackgroundColor()">
+            </div>
+            <div class="style-input button-text-style">
+                <label for="#btn-text-color">Text color</label>
+                <input type="color" id="btn-text-color" value="#00FFFF" onchange="setBtnTextColor()">
+                <label for="#btn-hover-text-color">Text color On Hover</label>
+                <input type="color" id="btn-hover-text-color" value="#ffffff" onchange="setBtnHoverTextColor()">
+            </div>
+            <div class="style-input button-border-style">
+                <label for="#btn-border-color">Border color</label>
+                <input type="color" id="btn-border-color" value="#00FFFF" onchange="setBtnBorder()">
+                <label for="#btn-border-size">Border size</label>
+                <input type="number" min="1" step="1" id="btn-border-size" value="2" onchange="setBtnBorder()">px
+                <label for="#btn-border-size">Border radius</label>
+                <input type="number" min="0" step="1" id="btn-border-radius" value="0" onchange="setBtnBorder()">px
+                <input type="checkbox" id="disableBorder" onchange="setBtnBorder()">
+                <label for="disableBorder">No border</label>
+            </div>
+            <div class="get-style">
+                <button class="get-style-btn">Get Style</button>
+            </div>
+        </div>
+
+
+        <div class="code-output">
+            <p>CSS Code:</p>
+            <div>
+                <p class="text-style"></p>
+            </div>
+        </div>
+
+        <script src="script.js"></script>
+    </body>
+</html>
