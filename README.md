@@ -1,5 +1,3 @@
-# Work In Progress
-
 # Neon Button Code Generator
 The Neon Button Code Generator is a simple web application built with CSS and JavaScript that allows users to create stylish neon buttons for their websites.
 Users can customize the button's properties, such as the color, font, size, and border radius. Additionally, users can add a neon effect to the button on hover, making it stand out even more.
